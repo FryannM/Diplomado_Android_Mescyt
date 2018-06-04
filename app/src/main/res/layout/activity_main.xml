@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imglogo_id"
         android:layout_width="103dp"
         android:layout_height="91dp"
         android:layout_marginEnd="124dp"
@@ -24,7 +24,7 @@
         app:srcCompat="@mipmap/logo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/Email_id"
         android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -33,16 +33,19 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:textColor="@color/White"
         android:hint="@string/EmailHint"
+        android:cursorVisible="false"
+        android:textCursorDrawable="@color/colorPrimary"
         android:inputType="textEmailAddress"
+        android:textColor="@color/White"
+        android:textColorLink="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imglogo_id" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/password_id"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -51,15 +54,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textColor="@color/White"
         android:ems="10"
+        android:cursorVisible="false"
+        android:textCursorDrawable="@null"
         android:hint="@string/PasswordHint"
         android:inputType="textPassword"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/Email_id"
         app:layout_constraintVertical_bias="0.056" />
 
     <Button
@@ -81,7 +86,7 @@
         app:layout_constraintVertical_bias="0.791" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgot_id"
         android:layout_width="154dp"
         android:layout_height="31dp"
         android:layout_marginBottom="88dp"
@@ -99,7 +104,7 @@
         app:layout_constraintVertical_bias="0.888" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/logo_id"
         android:layout_width="206dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
@@ -107,8 +112,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="132dp"
-        android:text="@string/LogoName"
         android:gravity="center"
+        android:text="@string/LogoName"
         android:textSize="19dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
