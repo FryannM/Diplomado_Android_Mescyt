@@ -5,4 +5,5 @@
     <string name="ButtonName"> Login</string>
     <string name="ForgotYourPassword"> Forget Your Password?</string>
     <string name="LogoName">STACK OVER FLOW </string>
+    <string name="Share">Share Profile</string>
 </resources>
