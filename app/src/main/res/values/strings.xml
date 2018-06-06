@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">Login</string>
+    <string name="app_name">Login Stack Over Flow</string>
     <string name="EmailHint">Email</string>
     <string name="PasswordHint">Password</string>
     <string name="ButtonName"> Login</string>
     <string name="ForgotYourPassword"> Forget Your Password?</string>
     <string name="LogoName">STACK OVER FLOW </string>
     <string name="Share">Share Profile</string>
+    <string name="Number_followers">777k</string>
+    <string name="Number_Projects">778k</string>
+    <string name="Number_Start">888k</string>
 </resources>
