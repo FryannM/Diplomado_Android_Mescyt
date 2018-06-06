@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(getApplicationContext(), "Wrong Password or email address", Toast.LENGTH_SHORT).show();
 
                         Edit_User.setVisibility(View.VISIBLE);
-                        Tv_mensaje.setBackgroundColor(Color.RED);
+
                         counter--;
-                        Tv_mensaje.setText(Integer.toString(counter));
+                        Tv_mensaje.setText(counter + " Attempts");
 
 
                         if (counter == 0) {

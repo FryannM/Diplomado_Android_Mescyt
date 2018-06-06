@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "220668733051",
+    "firebase_url": "https://login-e1ebb.firebaseio.com",
+    "project_id": "login-e1ebb",
+    "storage_bucket": "login-e1ebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220668733051:android:d53f5e6411f7b236",
+        "android_client_info": {
+          "package_name": "com.example.fryan.practica_login_01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220668733051-0bivu2elnlitslmjhndhn1cnu5tgasmm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "220668733051-0bivu2elnlitslmjhndhn1cnu5tgasmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp5adeMXvrOqzsya3mo7dfOgRP6W9xqZA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
