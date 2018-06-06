@@ -12,6 +12,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView Tv_mensaje;
     private int counter = 3;
     private Button ButtonShare;
-    private  String Mensaje ="HOla Soy Fryann un Software Developer";
+    private  String Url ="https://github.com/FryannM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         Intent intent  = new Intent(Intent.ACTION_SEND);
                         intent.setType("text/plain");
-                        intent.putExtra(Intent.EXTRA_SUBJECT,Mensaje);
-                        intent.putExtra(Intent.EXTRA_TEXT,Mensaje);
+                        intent.putExtra(Intent.EXTRA_SUBJECT,Url);
+                        intent.putExtra(Intent.EXTRA_TEXT,Url);
                         startActivity(Intent.createChooser(intent,"Share this "));
 
 
