@@ -21,9 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button ButtonLogin;
     private EditText Edit_User, Edit_Psw;
     private TextView Tv_mensaje;
+    private  TextView Tv_Descripcion;
+    private  String Description = "SoftDeveloper";
     private int counter = 3;
+    private  TextView Tv_Forget;
     private Button ButtonShare;
     private  String Url ="https://github.com/FryannM";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Edit_Psw = findViewById(R.id.password_id);
         Tv_mensaje = findViewById(R.id.mensaje_id);
         ButtonShare = findViewById(R.id.shareProfile_id);
+        Tv_Forget = findViewById(R.id.forgotshare_id);
+
+
 
         findViewById(R.id.LoginButon).setOnClickListener(this);
         findViewById(R.id.Button_shareProfile).setOnClickListener(this);
+        findViewById(R.id.forgotshare_id).setOnClickListener(this);
 
 
 
@@ -56,7 +64,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 "Redirecting...", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                         intent.putExtra("name", Edit_User.getText().toString());
+//                        intent.putExtra("Description",Tv_Descripcion.setText(Description).toString());
+
+
                         startActivity(intent);
+
                     } else {
 
 
@@ -75,7 +87,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
 
-
                 }
                 break;
 
@@ -86,14 +97,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         intent.setType("text/plain");
                         intent.putExtra(Intent.EXTRA_SUBJECT,Url);
                         intent.putExtra(Intent.EXTRA_TEXT,Url);
-                        startActivity(Intent.createChooser(intent,"Share this "));
-
+                        startActivity(Intent.createChooser(intent,"Sharing Fryann Files "));
 
                 }
+                case R.id.forgotshare_id:
+                {
+                    Toast.makeText(this, "We Working On it ", Toast.LENGTH_SHORT).show();
 
+                }
+                break;
             }
-
-
         }
     }
 

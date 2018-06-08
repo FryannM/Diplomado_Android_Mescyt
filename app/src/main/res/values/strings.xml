@@ -10,6 +10,8 @@
     <string name="Number_Projects">778k</string>
     <string name="Number_Start">888k</string>
     <string name="Followers">Followers</string>
-    <string name="Projects">Projects</string>
-    <string name="Starts">Starts</string>
+    <string name="Projects">Projects </string>
+    <string name="Stars">Stars</string>
+    <string name="Descripcion"> Software Developer</string>
 </resources>
+

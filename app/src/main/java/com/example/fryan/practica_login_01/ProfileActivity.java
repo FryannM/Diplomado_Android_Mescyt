@@ -9,6 +9,8 @@ import android.widget.TextView;
 public class ProfileActivity extends AppCompatActivity {
 
  private  TextView Name;
+ //private  String Description ="SoftDeveloper";
+ private  TextView T_Description;
   private   Bundle bundle;
 
 
